@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+int main () {
+    double a,b,c,d;
+    std::cout<<"Введите длину 2 сторон: ";
+    std::cin >>a>>b;
+    std::cout <<"Напишите высоту: ";
+    std::cin >> c;
+    std:: cout <<"Введите угол в градусах между двумя основаниями: ";
+    std::cin>>d;
+    d= d * M_PI / 180;
+    double volume = a*b*c*sin(d);
+    std::cout <<"Объем параллепипеда: " << volume<< std::endl;
+    return 0;
+}
+
+#include <iostream>
+#include <cmath>
+int main () {
+    double a,b,c;
+    std::cout<<"Введите длину 2 сторон трапеции: ";
+    std::cin >>a>>b;
+    std::cout <<"Напишите высоту трапеции: ";
+    std::cin >> c;
+    double perimeter= a+b+2*c;
+    double lenght= sqrt((a-b)*(a-b)+c*c)
+    std::cout <<"Периметр трапеции: " << perimeter << std::endl;
+    std::cout <<"Длина отрезка соединяющего середины ее оснований: " << lenght << std::endl;
+    return 0;
+}
